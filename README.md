@@ -33,6 +33,6 @@ Located within "src/shortener"
 
 ### Running
 
-Before kicking off the leiningen web server, you will need to start an instance of Mongo. Assuming it is added to your path, this can be kicked off by running `mongod` in a shell. After, start a web server for the application by running `lein run`
+Before kicking off the leiningen web server, you will need to start an instance of Mongo. Assuming it is added to your path, this can be started by running `mongod` in a shell. After, start a web server for the application by running `lein run`
 
 
