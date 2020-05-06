@@ -4,10 +4,10 @@ Rudimentary URL shortener built using Angular on the frontend, Clojure on the ba
 
 ## Prerequisites
 
-You will need [Leiningen][] 2.0.0 or above and [Angular CLI] version 8.2.2 or above installed.
+You will need [Leiningen][] 2.0.0 or above and [Angular CLI][] version 8.2.2 or above installed.
 
 [leiningen]: https://github.com/technomancy/leiningen
-[Angular CLI]: (https://github.com/angular/angular-cli)
+[Angular CLI]: https://github.com/angular/angular-cli
 
 
 # Frontend
