@@ -4,13 +4,16 @@ Rudimentary URL shortener built using Angular on the frontend, Clojure on the ba
 
 ## Prerequisites
 
-You will need [Leiningen][] 2.0.0 or above and [Angular CLI][] version 8.2.2 or above installed.
+You will need [Leiningen][] 2.0.0 or above, [Angular CLI][] version 8.2.2 or above, and [Mongo DB][] version 4.0.0 or above installed.
 
 [leiningen]: https://github.com/technomancy/leiningen
 [Angular CLI]: https://github.com/angular/angular-cli
+[Mongo DB]: https://github.com/mongodb/mongo
 
 
 ## Frontend
+
+Located within the "frontend" directory
 
 ### Development server
 
@@ -24,13 +27,14 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+## Backend
 
-## Running
+Located within "src/shortener"
+
+### Running
 
 To start a web server for the application, run:
 
-    lein ring server
+    lein run
 
-## License
 
-Copyright © 2019 FIXME
