@@ -18,10 +18,12 @@ export class GeneratorComponent {
       this.transformedUrl = "No URL entered.";
       return;
     }
+
+    this.url = this.url.replace(/\//g, '%2F')
     this.http.get("http://localhost:3000/shorten6/" + this.url)
     .subscribe((data: any) => {
       console.log(data);
-      this.transformedUrl = "Your shortened URL is: " + data['generated'];
+      this.transformedUrl = "Your shortened URL is: http://localhost:4200/" + data['generated'];
     },
     error => this.transformedUrl = "Invalid URL entered.")
   };
@@ -31,10 +33,12 @@ export class GeneratorComponent {
       this.transformedUrl = "No URL entered.";
       return;
     }
+
+    this.url = this.url.replace(/\//g, '%2F')
     this.http.get("http://localhost:3000/shorten8/" + this.url)
     .subscribe((data: any) => {
       console.log(data);
-      this.transformedUrl = "Your shortened URL is: " + data['generated'];
+      this.transformedUrl = "Your shortened URL is: http://localhost:4200/" + data['generated'];
     },
     error => this.transformedUrl = "Invalid URL entered.")
   };
