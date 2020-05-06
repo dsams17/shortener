@@ -1,0 +1,8 @@
+<h1>URL Shortener</h1>
+    <input #box
+      (keyup.enter)="update(box.value)"
+      (blur)="update(box.value)">
+
+    <button (click)="sendUrl6()">Shorten URL 6</button>
+    <button (click)="sendUrl8()">Shorten URL 8</button>
+    {{transformedUrl}}
